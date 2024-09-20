@@ -1,0 +1,44 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: $body-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-nunito;
+    text-transform: uppercase;
+	color: $dark-gray;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.btn-hollow {
+    border-width: 1px;
+    color: #efefef;
+    border-color: #efefef;
+    &.btn-primary {
+        background-color: transparent;
+    }
+    &.btn-primary:hover {
+        background-color: rgba(190, 250, 253, 0.3);
+        color: #efefef;
+        border-color: #efefef;
+    }
+    &.disabled {
+        border-color: #a4a4a4;
+    }
+}
